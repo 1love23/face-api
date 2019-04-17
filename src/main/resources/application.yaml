@@ -1,0 +1,38 @@
+#注意换行按Tab键，冒号之后必须空格(重要)
+server:
+   port: 8583
+
+#正式服将此项置为false
+swagger:
+    show: true
+
+logging:
+  config: classpath:logback.xml
+  path: all_log/
+  level:
+    com.hk : debug
+
+#spring:
+#  redis:
+#    #通过jedis进行连接池管理
+#    jedis:
+#      pool:
+#        #最大连接数
+#        max-active: 8
+#        #最大空闲连接数
+#        max-idle: 8
+#        #最小空闲连接数
+#        min-idle: 0
+#        #最大阻塞等待时间，负值为无限制
+#        max-wait: -1
+#    password:hkredispassword1test
+#    #超时时间，毫秒
+#    timeout: 30000
+#    #出现异常最大重试次数
+#    maxAttempts: 5
+#
+#    cluster:
+#      nodes: 113.106.93.247:2000,113.106.93.247:2001,113.106.93.247:2002,113.106.93.247:2003,113.106.93.247:2004,113.106.93.247:2005
+
+
+
